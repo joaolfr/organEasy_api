@@ -3,6 +3,7 @@ const app = express()
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const cors = require('cors')
+let port = process.env.PORT || 3000
 require('dotenv/config')
 
 app.use(cors())
@@ -21,4 +22,4 @@ mongoose.connect(process.env.DB_CONNECTION,{ useNewUrlParser: true, useUnifiedTo
 })
 
 //startin server
-app.listen(3000)
+app.listen(port)
