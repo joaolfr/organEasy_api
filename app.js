@@ -21,5 +21,6 @@ mongoose.connect(process.env.DB_CONNECTION,{ useNewUrlParser: true, useUnifiedTo
     console.log("db connected:", mongoose.connection.readyState)
 })
 
+
 //startin server
 app.listen(port)
