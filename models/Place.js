@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 
 const PlaceSchema = mongoose.Schema({
-    name:{type:String},
+    data:{type:Array},
     
 })
 

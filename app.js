@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 
 const placesRoute = require('./routes/places')
 
-app.use('/places', placesRoute)
+app.use('/data', placesRoute)
 
 
 //connect to db

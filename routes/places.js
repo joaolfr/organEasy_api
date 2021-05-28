@@ -18,7 +18,7 @@ router.get('/', async(req, res) => {
 //save a place
 router.post('/',async (req, res) => {
     const place = new Place({
-        name:req.body.name
+        data:req.body.data
     })
     
     try{
